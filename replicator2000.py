@@ -30,11 +30,11 @@ def orderIndices(arr,arrLen):
 # output: index.html with replaced titleString
 def makeFile(nbrhood):
     # bannerString and first indexLink are too close so characters in between must be paid special attention
-    titleString = "id=\"Neighborhood Title\">HSAP - Khan's Tutorial</title>"
-    bannerString = "id=\"Neighborhood 1\">High School Achievement Program</h1>"
+    titleString = "id=\"Neighborhood Title\">MCAP - Khan's Tutorial</title>"
+    bannerString = "id=\"Neighborhood 1\">Mastering College Admissions Program</h1>"
     featureString = "Why do families choose Khan's"
-    newTString = titleString.replace("HSAP - Khan's Tutorial</title>",nbrhood.replace('-',' ')+" HSAP - Khan's Tutorial</title>")
-    newBString = bannerString.replace("High School Achievement Program</h1>",nbrhood.replace('-',' ')+" High School Achievement Program</h1>")
+    newTString = titleString.replace("MCAP - Khan's Tutorial</title>",nbrhood.replace('-',' ')+" MCAP - Khan's Tutorial</title>")
+    newBString = bannerString.replace("Mastering College Admissions Program</h1>",nbrhood.replace('-',' ')+" Mastering College Admissions Program</h1>")
     newFString = featureString.replace("Why do families choose Khan's","Why do "+nbrhood.replace('-',' ')+" families choose Khan's")
 
     insertDict = {
@@ -83,7 +83,7 @@ def cityGeneration():
                      "Locust-Manor","Long-Island-City","Malba","Mapleton","Maspeth","Middle-Village",
                      "Morris-Park","Murray-Hill","Oakland-Gardens","Ozone-Park","Park-Slope","Parkchester",
                      "Pelham-Bay","Pomonok","Prospect-Lefferts-Gardens","Prospect-Park-South","Queens-Village",
-                     "Rego-Park","Richmond-Hill","Rochdale","Saint-Albans","Soundview","South-Jamaica",
+                     "Rego-Park","Richmond-Hill","Rochdale","Rosedale","Saint-Albans","Soundview","South-Jamaica",
                      "South-Ozone-Park","South-Richmond-Hill","Springfield-Gardens","Sunnyside-Gardens","Sunnyside",
                      "Sunset-Park","Unionport","Upper-East-Side","Utopia","Van-Nest","West-Farms","Westchester-Square",
                      "Whitestone","Windsor-Terrace","Woodhaven","Woodside"]
