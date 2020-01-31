@@ -30,11 +30,11 @@ def orderIndices(arr,arrLen):
 # output: index.html with replaced titleString
 def makeFile(nbrhood):
     # bannerString and first indexLink are too close so characters in between must be paid special attention
-    titleString = "id=\"Neighborhood Title\">MCAP - Khan's Tutorial</title>"
-    bannerString = "id=\"Neighborhood 1\">Mastering College Admissions Program</h1>"
+    titleString = "id=\"Neighborhood Title\">GPA Booster Program - Khan's Tutorial</title>"
+    bannerString = "id=\"Neighborhood 1\">GPA Booster Program</h1>"
     featureString = "Why do families choose Khan's"
-    newTString = titleString.replace("MCAP - Khan's Tutorial</title>",nbrhood.replace('-',' ')+" MCAP - Khan's Tutorial</title>")
-    newBString = bannerString.replace("Mastering College Admissions Program</h1>",nbrhood.replace('-',' ')+" Mastering College Admissions Program</h1>")
+    newTString = titleString.replace("GPA Booster Program - Khan's Tutorial</title>",nbrhood.replace('-',' ')+" GPA Booster Program - Khan's Tutorial</title>")
+    newBString = bannerString.replace("GPA Booster Program</h1>",nbrhood.replace('-',' ')+" GPA Booster Program</h1>")
     newFString = featureString.replace("Why do families choose Khan's","Why do "+nbrhood.replace('-',' ')+" families choose Khan's")
 
     insertDict = {
